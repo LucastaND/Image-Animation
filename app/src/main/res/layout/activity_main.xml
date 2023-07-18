@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="150dp"
+    tools:context=".MainActivity">
+
+<!--use image source from drawable and assign appropriate values to image-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/luxembourg"/>
+
+<!--create buttons and arrange them horizontally-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/bt_cw"
+            style="@style/style1"
+            android:text="Clockwise" />
+        <Button
+            android:id="@+id/bt_z"
+            style="@style/style1"
+            android:text="Zoom" />
+        <Button
+            android:id="@+id/bt_f"
+            style="@style/style1"
+            android:text="Fade" />
+    </LinearLayout>
+
+</LinearLayout>
